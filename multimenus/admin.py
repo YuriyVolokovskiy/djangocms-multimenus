@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.contrib.sites.shortcuts import get_current_site
-from django.utils.translation import ugettext, ugettext_lazy as _
+from django.utils.translation import gettext, gettext_lazy as _
 
 from aldryn_translation_tools.admin import AllTranslationsMixin
 from parler.admin import TranslatableAdmin
@@ -24,8 +24,8 @@ class MenuItemAdmin(AllTranslationsMixin, TranslatableAdmin, TreeAdmin):
 
     def get_form(self, request, obj=None, **kwargs):
         form_cls = super().get_form(request, obj, **kwargs)
-        form_cls.base_fields['_position'].label = ugettext('Position')
-        form_cls.base_fields['_ref_node_id'].label = ugettext('Relative to')
+        form_cls.base_fields['_position'].label = gettext('Position')
+        form_cls.base_fields['_ref_node_id'].label = gettext('Relative to')
         return form_cls
 
     def get_queryset(self, request):
