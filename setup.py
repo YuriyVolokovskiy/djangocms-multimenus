@@ -7,7 +7,7 @@ REQUIREMENTS = [
     'django-cms',
     'django-treebeard',
     'django-parler',
-    'aldryn-translation-tools',
+    # 'aldryn-translation-tools',
 ]
 
 CLASSIFIERS = [

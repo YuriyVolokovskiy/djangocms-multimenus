@@ -5,7 +5,8 @@ This plugin requires:
 * django-cms: https://github.com/divio/django-cms
 * django-treebeard
 * django-parler
-* aldryn-translation-tools
+
+[//]: # (* aldryn-translation-tools)
 
 Multiple named menus support for DjangoCMS
 
